@@ -1,0 +1,9 @@
+{% extends 'employee/main.html' %}
+{%block content%}
+<a href = "{% url 'home'  %}"> Go Back </a>
+<form method= "POST" action = "">
+    {%csrf_token%}    
+    <h4> Are you sure you want to delete {{employee}}??</h4>
+    <input type = "submit" value = "delete"/>
+</form>
+{% endblock content %}

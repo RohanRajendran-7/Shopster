@@ -1,0 +1,10 @@
+{% extends 'employee/main.html' %}
+{%block content%}
+<h1> visitors form</h1>
+<a href = {% url 'home' %}>GO Back</a>
+<form method="POST" action = "">
+    {% csrf_token %}
+    {{form.as_p}}
+    <input type = "submit" value = "submit">
+</form>
+{% endblock content %}
