@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rock Paper Scissors</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <img src="./images/logo.svg" alt="" class="logo"/>
+            <div class="score">
+                <div class="score__title">score</div>
+                <div class="score__number">12 </div>
+            </div>
+        </header>
+    </div>    
+    <br>
+    <section class="results">
+        <h2 class="results_heading" style="margin-left:-41vw;margin-top:5vh;">You picked </h2>
+        <h2 class="results_heading" style="margin-left:-17vw;margin-top:5vh;">House picked</h2>
+        <!-- <div class="results_result">
+            <button class="choice-btn" data-choice="paper">
+                <div class="choice paper">
+                    <img src="./images/icon-paper.svg" alt="paper" />
+                </div>
+            </button>
+        </div> -->
+        <section class="game">
+            <button class="choice-btn" data-choice="paper">
+                <div class="choice paper">
+                    <img src="./images/icon-paper.svg" alt="paper" />
+                </div>
+            </button>
+            <div class="youwin">you win<br>
+                <button class="playagain">play again</button>
+            </div>
+            <button class="choice-btn" data-choice="rock">
+                <div class="choice rock">
+                    <img src="./images/icon-rock.svg" alt="Rock" />
+                </div>
+            </button>
+        </section>
+
+        <!-- <div class="results_result"></div> -->
+    </section>
+</body>
+</html>
